@@ -1,0 +1,32 @@
+MVC Model View Controller
+views are where we make our
+HTML templates that a user will see and
+models are how we describe our data
+structure and we use them to interact
+with the database so the last piece of
+the puzzle is controllers now
+controllers will be the thing that forms
+the link between our models and our
+views they're like the middlemen that
+use models to get data and then pass
+that data into a view now we've actually
+already done that directly in our route
+handlers right but the idea of using
+controllers is that we just extract
+those handler functions into a separate
+controller file then we can just
+reference those controller functions in
+our routes file again though you don't
+have to do this the idea behind this is
+just to make our code easier to manage
+and to understand we're just splitting
+our code into different areas of files
+and then each area of file has its own
+job to do so our route file matches
+incoming requests and it passes those
+requests to the correct controller
+function a controller communicates with
+the appropriate model to get data into a
+view and then the view then renders that
+data into its template and it gets sent
+to the browser
